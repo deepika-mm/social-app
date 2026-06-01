@@ -32,14 +32,7 @@ social-app/
 1. Go to https://cloudinary.com and create a free account
 2. From your dashboard copy: Cloud Name, API Key, API Secret
 
-### 4. Configure the backend
-```bash
-cd backend
-cp .env.example .env
-```
-Open `.env` and fill in your MongoDB URI, JWT secret, and Cloudinary credentials.
-
-### 5. Install and run the backend
+### 4. Install and run the backend (In Powershell)
 ```bash
 cd backend
 cd "C:\Users\Deepika M M\OneDrive\Documents\social-app\backend"
@@ -51,7 +44,7 @@ node server.js
 # If port busy:
 taskkill /F /IM node.exe
 
-### 6. Install and run the frontend
+### 5. Install and run the frontend
 ```bash
 cd frontend
 cd "C:\Users\Deepika M M\OneDrive\Documents\social-app\frontend"
