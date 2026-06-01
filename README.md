@@ -42,21 +42,19 @@ Open `.env` and fill in your MongoDB URI, JWT secret, and Cloudinary credentials
 ### 5. Install and run the backend
 ```bash
 cd backend
+cd "C:\Users\Deepika M M\OneDrive\Documents\social-app\backend"
 npm install
-npm run dev
-```
-You should see: `Connected to MongoDB` and `Server running on port 5000`
+npm uninstall cloudinary multer-storage-cloudinary
+npm install cloudinary@1.41.3 multer-storage-cloudinary@4.0.0
+node server.js
 
-### 6. Configure the frontend
+# If port busy:
+taskkill /F /IM node.exe
+
+### 6. Install and run the frontend
 ```bash
 cd frontend
-cp .env.example .env
-```
-The default `.env` points to `http://localhost:5000/api` which is correct for local dev.
-
-### 7. Install and run the frontend
-```bash
-cd frontend
+cd "C:\Users\Deepika M M\OneDrive\Documents\social-app\frontend"
 npm install
 npm start
 ```
